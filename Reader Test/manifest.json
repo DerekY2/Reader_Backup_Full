@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Reader Mode",
+  "version": "1.1",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "description": "Boost productivity.",
+  "background": {
+    "service_worker": "scripts/main/background.js"
+  },
+  "action": {
+    "default_popup": "html/main/popup.html",
+    "default_icon": "img/icon128.png"
+  },
+  "options_page": "home.html",
+  "options_ui": {
+    "page": "home.html",
+    "open_in_tab": true
+  },
+
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "64": "img/icon64.png",
+    "128": "img/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles/blockPage.css"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["html/config/blockPage.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

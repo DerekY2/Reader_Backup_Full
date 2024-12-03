@@ -1,0 +1,248 @@
+<!--Authors: Derek Y, Hrishi P
+    "Focus" - Front-end: tabs configuration page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus</title>
+  <link rel="stylesheet" href="../../styles/config.css">
+  <style>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .input-container {
+      margin-bottom: 10px;
+    }
+
+    .input-container label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .input-container input, .input-container select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .saved-website,
+    .addButton,
+    .closeTabsButton,
+    .submit-button,
+    .saveBlockBtn,
+    .saveOpenBtn {
+      backface-visibility: hidden;
+      will-change: transform;
+    }
+
+
+    .addButton, .closeTabsButton, .submit-button {
+      font-family: cursive;
+      padding: 10px 20px;
+      background-color: lightblue;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+    }
+
+    .saveBlockBtn{
+      font-family: cursive;
+      padding: 10px 20px;
+      background-color: rgb(255, 133, 133);
+      color: #000000;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+    }
+
+    .saveOpenBtn{
+      font-family: cursive;
+      padding: 10px 20px;
+      background-color: rgb(101, 255, 40);
+      color: #000000;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+    }
+
+    .saved-website {
+      font-family: cursive;
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: lightblue;
+      color: #000000;
+      border-radius: 3px;
+      font-size: 14px;
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+    }
+
+    .saved-website button.delete-button {
+      font-family: cursive;
+      margin-left: auto;
+      background-color: #008cff;
+      border: none;
+      border-radius: 3px;
+      padding: 5px 10px;
+      margin-right: 10px;
+      color: #000000;
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+    }
+
+    .saved-website button.delete-button:hover {
+      background-color: #0077ff; /* Change to a darker shade */
+    }
+
+    .saved-website:hover,
+    .addButton:hover,
+    .closeTabsButton:hover,
+    .submit-button:hover,
+    .saveBlockBtn:hover,
+    .saveOpenBtn:hover {
+      filter: brightness(0.9); /* Darken the color on hover */
+      transform: scale(1.03); /* Apply a slight scale increase */
+      transition: background-color 0.3s, transform 0.3s; /* Add smooth transition effect */
+    }
+
+
+    .addButton:active,
+    .closeTabsButton:active,
+    .submit-button:active,
+    .saveBlockBtn:active,
+    .saveOpenBtn:active {
+      filter: brightness(0.8); /* Darken the color on click */
+    }
+
+    #urlErrorMessage, #nameErrorMessage{
+      color:red;
+    }
+
+
+    .saved-website.blocked {
+      background-color: rgb(255, 144, 144);
+    }
+
+    .saved-website.open {
+      background-color: rgb(179, 255, 179);
+    }
+
+    .delete-button {
+      background-color: transparent;
+    }
+
+    header nav ul li a{
+      color: #FFFFFF; /* Change this to the desired text color */
+    }
+
+    header nav ul li a:not(#tabs-link):hover{
+      color: #50c8ff; /* Change this to the desired text color */
+      
+    }
+
+    header nav ul li a#tabs-link{
+      background-color: #007ec7; /* Change this to the desired background color */
+      padding-top: 22.7px; /* Adjust the top padding */
+      padding-bottom: 22.7px; /* Adjust the bottom padding */
+      padding-left: 23px; /* Adjust the left padding */
+      padding-right: 23px; /* Adjust the right padding */
+    }
+
+    header nav ul li a#home-link{
+      padding-top: 22.7px; /* Adjust the top padding */
+      padding-bottom: 22.7px; /* Adjust the bottom padding */
+      padding-left: 23px; /* Adjust the left padding */
+      padding-right: 23px; /* Adjust the right padding */
+    }
+
+    header nav ul li a#schedule-link{
+      padding-top: 22.7px; /* Adjust the top padding */
+      padding-bottom: 22.7px; /* Adjust the bottom padding */
+      padding-left: 10px; /* Adjust the left padding */
+      padding-right: 10px; /* Adjust the right padding */
+    }
+
+    .displayUrl{
+      color:rgb(79, 79, 79);
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="logo">Focus.</h1>
+    <nav>
+      <ul>
+        <li><a id="home-link" href="home.html"><span>Home</span></a></li>
+        <li><a id="tabs-link" href="tabs.html"><span>Tabs</span></a></li>
+        <li><a id="schedule-link" href="schedule.html"><span>Schedule</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Tab Management</h1>
+      <div class="button-container">
+      </div>
+      <form id="tabForm" style="display: none;">
+        <div class="input-container">
+          <label for="websiteUrl">Website URL:</label>
+          <input type="text" id="websiteUrl" required placeholder="https://example.com/">
+          <p class="error-message" id="urlErrorMessage"></p> <!-- Error message element -->
+        </div>
+        <div class="input-container">
+          <label for="websiteName">Website Name:</label>
+          <input type="text" id="websiteName" required placeholder="Enter a name">
+          <p class="error-message" id="nameErrorMessage"></p> <!-- Error message element -->
+        </div>
+        <button type="button" id="closeButton" class="saveBlockBtn">Save - Block</button>
+        <button type="button" id="openButton" class="saveOpenBtn">Save - Open</button>
+      </form>
+    </section>
+
+    <section>
+      <h1>Tabs to block</h1>
+      <div id="savedTabsContainer"></div>
+    </section>
+
+    <section>
+      <h1>Tabs to open</h1>
+      <div id="openTabsContainer"></div>
+    </section>    
+  </main>
+
+  <script src="../../scripts/config/tabs.js"></script>
+</body>
+</html>

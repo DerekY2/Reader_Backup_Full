@@ -1,0 +1,513 @@
+<li>
+  <a href="#/" id="options-save-page" data-panel="options-saved-panel" class="tooltip" title="Save Article">
+    <i class="material-icons">save</i>
+  </a>
+</li>
+
+<li>
+  <a href="#/" id="options-articulate-toggle" data-panel="options-articulate-panel" class="tooltip" title="Text To Speech">
+    <i class="material-icons">volume_up</i>
+  </a>
+</li>
+
+<li>
+  <a href="#/" id="options-manual-scroll" class="tooltip" title="Auto Scroll">
+    <i class="material-icons start">play_for_work</i>
+    <i class="material-icons stop" style="display:none;">stop</i>
+  </a>
+</li>
+
+      
+<li>
+  <a href="#/" id="options-delete-element" class="tooltip" title="Delete Elements">
+    <i class="options-delete-element material-icons">delete</i>
+  </a>
+  <a href="#/" id="options-delete-element-stop" class="tooltip" title="Stop Deletion Mode" style="display:none;">
+    <i class="options-delete-element material-icons">delete_forever</i>
+  </a>
+</li>
+<li>
+  <a href="#/" id="options-delete-element-undo" class="tooltip" title="Undo Deleted Elements" style="display:none;">
+    <i class="options-delete-element material-icons">undo</i>
+  </a>
+</li>
+
+
+<!--           HIGHLIGHTER     -->
+
+<div id="options-highlighter-color" class="options-panel-content-section">
+  <label class="float-left">Highlighter Color</label>
+
+  <div class="input-group color-picker">
+    <label class="color"><input type="color" value="#FFCC99" ></label>
+    <input type="text" class="color" name="highlighter_color" value="#FFCC99" spellcheck="false" autocomplete="off"  />
+  </div>
+</div>
+
+
+<li>
+  <a href="#/" id="cr-toolbar-highlight">
+    <i class="fas fa-highlighter"></i>
+  </a>
+</li>
+<li>
+  <a href="#/" id="cr-toolbar-note">
+    <i class="far fa-comment"></i>
+  </a>
+</li>
+
+
+<!--        TWITTER  -->
+
+<li>
+  <a href="#/" id="cr-toolbar-share-twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</li>
+
+
+<!--   FOOTER -->
+<li>
+  <a href="https://twitter.com/readermode" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+</li>
+<li>
+  <a href="https://readermode.io/activations" target="_blank"><i class="fas fa-shield-alt"></i>Manage Activations</a>
+</li>
+
+<!-- SavedInfo -->
+<div id="cr-saved-info" class="no-print">
+  <ul>
+    <li class="saved-version-notice" style="display: none;">You are viewing the saved version of the article</li>
+    <li>
+      <a href="#/" class="saved-version-notice view-saved-article" target="_blank" style="display: none;">
+        <i class="fas fa-globe"></i>
+        View on Reader Mode
+      </a>
+    </li>
+    <li>
+      <a href="#/" class="saved-version-notice remove-saved-article" style="display: none;">
+        <i class="far fa-trash-alt"></i>
+        Delete this article
+      </a>
+    </li>
+    <li>
+      <a href="https://readermode.io/dashboard" class="btn btn-xs open-saved-articles" target="_blank">
+        <i class="fas fa-external-link-alt"></i>
+        Go to dashboard
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div id="cr-notes" style="display:none;">
+  <h3>NOTES</h3>
+  <ul id="cr-notes-list">
+  </ul>
+  <div class="text-default" style="display:none;">You have not taken any notes yet</div>
+</div>
+
+
+<!--   TRANSLATE   -->
+
+<button class="options-panel-header"><i class="fas fa-language"></i>&nbsp;TRANSLATE <i class="fas fa-chevron-down marker"></i></button>
+<div class="options-panel-content">
+  <div id="options-translate-to" class="options-panel-content-section">
+    <label class="label-block m-b-10i">Default language to translate to:</label>
+    <label class="float-left">Select: </label>
+    <select class="float-right">
+      <option value="af">🇿🇦 Afrikaans</option>
+      <option value="sq">🇦🇱 Albanian</option>
+      <option value="ar">🇸🇦 Arabic</option>
+      <option value="az">🇦🇿 Azerbaijani</option>
+      <option value="eu">🏴󠁥󠁳󠁰󠁶󠁿 Basque</option>
+      <option value="bn">🇧🇩 Bengali</option>
+      <option value="be">🇧🇾 Belarusian</option>
+      <option value="bg">🇧🇬 Bulgarian</option>
+      <option value="ca">🏴󠁥󠁳󠁰󠁶󠁿 Catalan</option>
+      <option value="zh-CN">🇨🇳 Chinese Simplified</option>
+      <option value="zh-TW">🇨🇳 Chinese Traditional</option>
+      <option value="hr">🇭🇷 Croatian</option>
+      <option value="cs">🇨🇿 Czech</option>
+      <option value="da">🇩🇰 Danish</option>
+      <option value="nl">🇳🇱 Dutch</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="eo">🏴󠁥󠁳󠁰󠁶󠁿 Esperanto</option>
+      <option value="et">🇪🇪 Estonian</option>
+      <option value="tl">🇵🇭 Filipino</option>
+      <option value="fi">🇫🇮 Finnish</option>
+      <option value="fr">🇫🇷 French</option>
+      <option value="gl">🇪🇸 Galician</option>
+      <option value="ka">🇬🇪 Georgian</option>
+      <option value="de">🇩🇪 German</option>
+      <option value="el">🇬🇷 Greek</option>
+      <option value="gu">🇮🇳 Gujarati</option>
+      <option value="ht">🇭🇹 Haitian Creole</option>
+      <option value="iw">🇮🇱 Hebrew</option>
+      <option value="hi">🇮🇳 Hindi</option>
+      <option value="hu">🇭🇺 Hungarian</option>
+      <option value="is">🇮🇸 Icelandic</option>
+      <option value="id">🇮🇩 Indonesian</option>
+      <option value="ga">🇮🇪 Irish</option>
+      <option value="it">🇮🇹 Italian</option>
+      <option value="ja">🇯🇵 Japanese</option>
+      <option value="kn">🇮🇳 Kannada</option>
+      <option value="ko">🇰🇷 Korean</option>
+      <option value="la">🏴󠁥󠁳󠁰󠁶󠁿 Latin</option>
+      <option value="lv">🇱🇻 Latvian</option>
+      <option value="lt">🇱🇹 Lithuanian</option>
+      <option value="mk">🇲🇰 Macedonian</option>
+      <option value="ms">🇲🇾 Malay</option>
+      <option value="mt">🇲🇹 Maltese</option>
+      <option value="no">🇳🇴 Norwegian</option>
+      <option value="fa">🇮🇷 Persian</option>
+      <option value="pl">🇵🇱 Polish</option>
+      <option value="pt">🇵🇹 Portuguese</option>
+      <option value="ro">🇷🇴 Romanian</option>
+      <option value="ru">🇷🇺 Russian</option>
+      <option value="sr">🇷🇸 Serbian</option>
+      <option value="sk">🇸🇰 Slovak</option>
+      <option value="sl">🇸🇮 Slovenian</option>
+      <option value="es">🇪🇸 Spanish</option>
+      <option value="sw">🏴󠁥󠁳󠁰󠁶󠁿 Swahili</option>
+      <option value="sv">🇸🇪 Swedish</option>
+      <option value="ta">🇮🇳 Tamil</option>
+      <option value="te">🇮🇳 Telugu</option>
+      <option value="th">🇹🇭 Thai</option>
+      <option value="tr">🇹🇷 Turkish</option>
+      <option value="uk">🇺🇦 Ukrainian</option>
+      <option value="ur">🇵🇰 Urdu</option>
+      <option value="vi">🇻🇳 Vietnamese</option>
+      <option value="cy">🇬🇧 Welsh</option>
+      <option value="yi">🇮🇱 Yiddish</option>
+    </select>
+
+    <button name="save-options-translate" class="btn btn-save-changes m-t-10">Save changes</button>
+  </div>
+</div>
+
+<!--     auto-run rules   -->
+<button class="options-panel-header"><i class="fas fa-globe-americas"></i> &nbsp;AUTO-RUN RULES <i class="fas fa-chevron-down marker"></i></button>
+<div class="options-panel-content">
+  <div id="options-auto-run">
+    <label class="label-block">Auto-run when: </label>
+
+    <div class="options-panel-default-text" style="display:none;">
+      You haven't added any auto-run rules yet
+    </div>
+
+    <ul id="options-auto-run-list">
+    </ul>
+
+    <button name="add_new_rule_toggle" class="btn">Add new rule</button>
+
+    <div id="options-auto-run-add-new-rule-panel" style="display:none;">
+      <div id="anr-header">Auto-run the reader if the page:</div>
+
+      <ul>
+        <li><span><i class="fas fa-check"></i>domain name is:</span> <input type="text" name="domain_name_is" spellcheck="false" autocomplete="off" placeholder="readermode.io" /></li>
+        <li><span><i class="fas fa-check"></i>url is:</span> <input type="text" name="url_is" spellcheck="false" autocomplete="off" placeholder="http://"  /></li>
+        <li><span><i class="fas fa-check"></i>url is not:</span> <input type="text" name="url_is_not" spellcheck="false" autocomplete="off" placeholder="http://" /></li>
+        <li><span><i class="fas fa-check"></i>url contains:</span> <input type="text" name="url_contains" spellcheck="false" autocomplete="off" /></li>
+        <li><span><i class="fas fa-check"></i>url doesn't contain:</span> <input type="text" name="url_does_not_contain" spellcheck="false" autocomplete="off" /></li>
+        <li><span><i class="fas fa-check"></i>url starts with:</span> <input type="text" name="url_starts_with" spellcheck="false" autocomplete="off" /></li>
+        <li><span><i class="fas fa-check"></i>url ends with:</span> <input type="text" name="url_ends_with" spellcheck="false" autocomplete="off" /></li>
+      </ul>
+
+      <button name="cancel_new_rule" class="btn">Cancel</button>
+      <button name="add_new_rule" class="btn">Add new rule</button>
+    </div>
+
+    <br/>
+  </div>
+</div>
+
+<button class="options-panel-header"><i class="fas fa-palette"></i> &nbsp;CUSTOM CSS <i class="fas fa-chevron-down marker"></i></button>
+<div class="options-panel-content">
+  <div id="options-default-css">
+    <label class="label-block">Add your own style</label>
+    <textarea class="m-t-3" name="name" rows="20" cols="40" spellcheck="false">
+    </textarea>
+    <button class="btn m-t-10">Update style</button>
+  </div>
+  <br/>
+</div>
+
+
+    <!-- Articulate Panel -->
+    <div id="options-articulate-panel" class="options-panel no-print" style="display:none;">
+      <button class="options-panel-header" style="display: block"><i class="fas fa-volume-up"></i> &nbsp;Text To Speech</button>
+      <div class="options-panel-content" style="display: block">
+        <div id="options-articulate-voice" class="options-panel-content-section">
+          <label for="voice" class="float-left">Voice</label>
+          <select class="float-right">
+          </select>
+        </div>
+
+        <div id="options-articulate-rate" class="options-panel-content-section options-with-slider m-t-15 m-b-0i">
+          <label>Rate</label>
+          <div class="slider-container">
+            <input type="range" min="0" max="2" step="0.1" name="rate" class="slider float-left" value="1">
+            <div class="input-label input-label-small input-label-no-after float-right">
+              <input type="number" class="val rounded" value="1" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <div id="options-articulate-pitch" class="options-panel-content-section options-with-slider">
+          <label for="pitch">Pitch</label>
+          <div class="slider-container">
+            <input type="range" min="0" max="10" step="0.1" name="rate" class="slider float-left" value="1">
+            <div class="input-label input-label-small input-label-no-after float-right">
+              <input type="number" class="val rounded" value="1" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <div id="options-articulate-volume" class="options-panel-content-section options-with-slider">
+          <label for="volume">Volume</label>
+          <div class="slider-container">
+            <input type="range" min="0" max="1" step="0.01" name="rate" class="slider float-left" value="1">
+            <div class="input-label input-label-small input-label-no-after  float-right">
+              <input type="number" class="val rounded" value="1" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <div id="options-articulate-player">
+          <button id="articulate-speak" class="btn btn-player btn-play tooltip-s" title="Start" name="play">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="articulate-pause" class="btn btn-player btn-pause tooltip-s" title="Pause" name="pause" style="display:none">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button id="articulate-stop" class="btn btn-player btn-stop tooltip-s" title="Stop/Reset" name="stop">
+            <i class="fas fa-stop"></i>
+          </button>
+
+          <button name="save-options-articulate" class="btn btn-save-changes float-right m-t-13">Save changes</button>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- Saved Panel -->
+    <div id="options-saved-panel" class="options-panel no-print" style="display:none;">
+      <div id="options-saved-panel-header">
+        <span class="loading-status"></span>
+        <a href="#/" class="close">&times;</a>
+      </div>
+      <div id="options-saved-panel-body">
+        <div id="osp-basics" class="osp-section m-t-5i">
+          <label class="label-header">TITLE</label>
+          <input type="text" name="cr_title" id="osp-title" class="form-field cr-title m-t-5i" placeholder="Title" autocomplete="off" />
+
+          <label class="label-header m-t-12i">DESCRIPTION</label>
+          <textarea name="excerpt" id="osp-excerpt" class="form-field cr-excerpt m-t-5i" rows="4" cols="40" placeholder="Description..." autocomplete="off"></textarea>
+
+          <label class="label-header m-t-12i">AUTHOR</label>
+          <input type="text" name="cr_author" id="osp-author" class="form-field m-t-5i" placeholder="Author" autocomplete="off" />
+        </div>
+
+        <div id="osp-tags" class="osp-section">
+          <input type="text" name="cr_list" id="osp-tag-list" class="form-field cr-tag-list" placeholder="Add tags..." autocomplete="off" />
+        </div>
+
+        <div id="osp-folders" class="osp-section m-b-18">
+          <select>
+            <option value="Loading...">Loading...</option>
+          </select>
+
+          &nbsp;
+
+          <span id="osp-folder-actions">
+            <a href="#/" id="osp-actions-edit-toggle" class=""><i class="fas fa-pen"></i></a> &nbsp;
+            <a href="#/" id="osp-actions-new-toggle" class=""><i class="fas fa-plus"></i></a>
+          </span>
+        </div>
+
+        <div id="osp-forms" class="osp-section">
+          <div id="osp-form-edit" class="form" style="display: none;">
+            <table>
+              <tr>
+                <td class="label">
+                  Name
+                </td>
+                <td>
+                  <input type="text" name="folder_name" placeholder="Enter new folder name..." autocomplete="off" />
+                  <input type="hidden" name="folder_id" autocomplete="off" />
+                  <input type="hidden" name="folder_level" autocomplete="off" />
+                </td>
+              </tr>
+            </table>
+
+            <button name="update">Update</button>
+            <button name="cancel" class="btn-cancel">Cancel</button>
+
+            <a name="delete"><i class="fas fa-trash"></i></a>
+          </div>
+
+          <div id="osp-form-new" class="form" style="display:none;">
+            <table>
+              <tr>
+                <td class="label">
+                  Name
+                </td>
+                <td>
+                  <input type="text" name="folder_name" placeholder="Enter new folder name..." autocomplete="off" />
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  Type
+                </td>
+                <td>
+                  <input type="radio" name="folder_type" value="folder" checked> <label for="folder">Folder</label>
+                  <input type="radio" name="folder_type" value="sub_folder"> <label for="subfolder">SubFolder</label>
+                </td>
+              </tr>
+            </table>
+
+            <button name="add">Add</button>
+            <button name="cancel" class="btn-cancel">Cancel</button>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div id="osp-footer" class="osp-section">
+          <div id="osp-footer-top">
+            <a href="#/" id="osp-actions-save" class="btn btn-save m-r-7i">
+              <i class="fas fa-save"></i> &nbsp;Save
+            </a>
+
+            <a href="#/" id="osp-actions-view" class="btn saved-version-notice view-saved-article m-r-7i" style="display:none;" target="_blank">
+              <i class="fas fa-globe"></i> &nbsp;View
+            </a>
+
+            <a href="#/" id="osp-actions-delete" class="btn saved-version-notice remove-saved-article" style="display:none;">
+              <i class="fas fa-trash"></i> &nbsp;Delete
+            </a>
+          </div>
+          <div id="osp-footer-bottom">
+            <a href="https://readermode.io/dashboard" target="_blank">
+              Go to dashboard <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+      <button class="options-panel-header"><i class="fas fa-ruler-horizontal"></i> &nbsp;DYSLEXIA RULER <i class="fas fa-chevron-down marker"></i></button>
+      <div class="options-panel-content">
+        <div id="options-display-ruler" class="options-panel-content-section">
+          <label class="float-left">Ruler</label>
+          <div class="float-right m-t-7">
+            <input type="checkbox" id="cr_display_ruler" name="display_ruler" class="switch-input">
+            <label for="cr_display_ruler" class="switch-label"><span class="toggle--on">Show</span><span class="toggle--off">Hide</span></label>
+          </div>
+        </div>
+
+        <div id="options-ruler-color" class="options-panel-content-section">
+          <label class="float-left">Ruler Color</label>
+
+          <div class="input-group color-picker">
+            <label class="color"><input type="color" value="#a2a2a2" ></label>
+            <input type="text" class="color" name="ruler_color" value="#a2a2a2" spellcheck="false" />
+          </div>
+        </div>
+
+        <div id="options-ruler-height" class="options-panel-content-section options-with-slider m-t-15">
+          <label>Ruler Height</label>
+          <div class="slider-container">
+            <input type="range" min="10" max="250" step="0.1" name="ruler_height" class="slider float-left" value="30">
+            <div class="input-label input-label-px float-right">
+              <input type="number" class="val" value="30" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <div id="options-ruler-position" class="options-panel-content-section options-with-slider">
+          <label>Ruler Position</label>
+          <div class="slider-container">
+            <input type="range" min="10" max="90" step="10" name="ruler_position" class="slider float-left" value="30">
+            <div class="input-label input-label-percentage float-right">
+              <input type="number" class="val" value="15" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <button name="save-options-ruler" class="btn btn-save-changes">Save changes</button>
+      </div>
+
+
+      <!--  DYSLEXIA RULER   -->
+      
+      <button class="options-panel-header"><i class="fas fa-ruler-horizontal"></i> &nbsp;DYSLEXIA RULER <i class="fas fa-chevron-down marker"></i></button>
+      <div class="options-panel-content">
+        <div id="options-display-ruler" class="options-panel-content-section">
+          <label class="float-left">Ruler</label>
+          <div class="float-right m-t-7">
+            <input type="checkbox" id="cr_display_ruler" name="display_ruler" class="switch-input">
+            <label for="cr_display_ruler" class="switch-label"><span class="toggle--on">Show</span><span class="toggle--off">Hide</span></label>
+          </div>
+        </div>
+
+        <div id="options-ruler-color" class="options-panel-content-section">
+          <label class="float-left">Ruler Color</label>
+
+          <div class="input-group color-picker">
+            <label class="color"><input type="color" value="#a2a2a2" ></label>
+            <input type="text" class="color" name="ruler_color" value="#a2a2a2" spellcheck="false" />
+          </div>
+        </div>
+
+        <div id="options-ruler-height" class="options-panel-content-section options-with-slider m-t-15">
+          <label>Ruler Height</label>
+          <div class="slider-container">
+            <input type="range" min="10" max="250" step="0.1" name="ruler_height" class="slider float-left" value="30">
+            <div class="input-label input-label-px float-right">
+              <input type="number" class="val" value="30" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <div id="options-ruler-position" class="options-panel-content-section options-with-slider">
+          <label>Ruler Position</label>
+          <div class="slider-container">
+            <input type="range" min="10" max="90" step="10" name="ruler_position" class="slider float-left" value="30">
+            <div class="input-label input-label-percentage float-right">
+              <input type="number" class="val" value="15" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+
+        <button name="save-options-ruler" class="btn btn-save-changes">Save changes</button>
+      </div>
+
+
+
+      <!-- NOTES -->
+      <div id="options-display-notes" class="options-panel-content-section">
+        <label class="float-left">Notes</label>
+
+        <div class="float-right m-t-7">
+          <input type="checkbox" id="cr_display_notes" name="display_notes" class="switch-input">
+          <label for="cr_display_notes" class="switch-label"><span class="toggle--on">Show</span><span class="toggle--off">Hide</span></label>
+        </div>
+      </div>
+
+
+      <!-- NOTES PANEL -->
+
+      <div id="note-panel" class='note-panel no-close'>
+        <a href="#/" class="btn-close"><i class="fas fa-times"></i></a>
+
+        <textarea id="note-panel-textarea" class='note no-close' spellcheck="false" autocomplete="off" placeholder="Say something about this..."></textarea>
+        <button class='update no-close'><span><i class="far fa-save"></i>Update</span></button>
+        <button class='delete no-close'><i class="far fa-trash-alt"></i> <span>Delete</span></button>
+      </div>
+    </div>
